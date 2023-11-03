@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatibe" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio nro 1 UTN AP4.0</title>
+  <link rel="icon" href="imagenes/ejercicios.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+            <h1 class="titulo">SEGURO</h1>
+        <h2 class="nombre">No Pagamos Cooperativa</h2>
+        
+  </header>
+
+  <section class="hero">
+  <h3>Disfrutá de tu vida, viajá con la familia, mientras nosotros los cuidamos...</h3>
+   <img class="imagen-hero" src="imagenes/viaje2.png" alt="imagen-fondo-sereno">
+  </section>
+
+
+<section> 
+  <h4>Póliza Básica</h4>
+    <p>Cobertura para viajes cortos dentro del perimetro de tu ciudad <br>
+     solo se cubren viajes en movilidad publica.
+    </p>
+  <img class="img-basico" src="imagenes/basico.png" alt="Logo-imagen-seguro-básico">
+
+  <h4>Póliza Intermedia</h4>
+  <p>Cobertura dentro del territorio nacional <br>
+     se cubren viajes por las diferents vias de transporte pubica y privadas.
+  </p>
+  <img class="img-intermedio" src="imagenes/intermedio.png" alt="Logo-imagen-seguro-intermedio">
+
+  <h4>Póliza Premium</h4>
+  <p>Cobertura dentro del territorio nacional y a nivel internaconal <br>
+    se cubren viajes por las diferents vias de transporte pubica y privadas, ademas de actividades rereacionales de alto riesgo.
+ </p>
+  <img class="img-premium" src="imagenes/premium.png" alt="Logo-imagen-seguro-premium">
+</section>
+
+
+<h1>Formulario de Seguro</h1>
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+
+        <label for="tipo_seguro">Tipo de Seguro:</label>
+        <select id="tipo_seguro" name="tipo_seguro" required>
+            <option value="seguro_basico">Seguro Básico 500</option>
+            <option value="seguro_intermedio">Seguro Intermedio 1000</option>
+            <option value="seguro_premium">Seguro Premium 1500</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+</body>
+</html>
+
