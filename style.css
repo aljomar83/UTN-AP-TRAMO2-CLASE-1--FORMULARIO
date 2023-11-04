@@ -3,25 +3,69 @@
   padding: 0;
   }
 
-  header{
-    display: flex;
-    justify-content: space-around;
-    background-color: beige;
-  }
+header{
+  display: flex;
+  justify-content: space-around;
+  background-color: beige;
+  align-items: center;
+
+}
 
 body{
-  background-color: burlywood;
+  background-color: rgb(253, 253, 253);
+}
+
+#hero{
+  display: flex;
+  height: 80vh;
+  justify-content:first baseline;
+  flex-direction: column;
+  background-image:url(imagenes/viaje2.png);
+}
+
+#productos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#bronce{
+  display: flex;
+  justify-content:flex-start ;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  background-image: url(imagenes/bronze.png);
+}
+
+#silver{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-image: url(imagenes/silver.png);
+}
+
+#gold{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-image: url(imagenes/gold.png);
+}
+
+#contacto{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 
-
-
-
-
-
-
-  nav li a:hover {
-    background: tomato;
-    color: white;
-    }
-  xiz-boja
+nav li a:hover {
+  background: tomato;
+  color: white;
+}
+  

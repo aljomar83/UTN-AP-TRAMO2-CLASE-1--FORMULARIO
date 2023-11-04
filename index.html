@@ -13,38 +13,50 @@
   <header>
             <h1 class="titulo">SEGURO</h1>
         <h2 class="nombre">No Pagamos Cooperativa</h2>
+      <nav>
+        <a href="#hero">HOME</a>
+        <a href="#productos">PRODUCTOS</a>
+        <a href="#contacto">CONTACTO</a>
+
+        
+      </nav>
         
   </header>
 
-  <section class="hero">
+  <section id="hero">
   <h3>Disfrutá de tu vida, viajá con la familia, mientras nosotros los cuidamos...</h3>
-   <img class="imagen-hero" src="imagenes/viaje2.png" alt="imagen-fondo-sereno">
-  </section>
+   </section>
 
 
-<section> 
-  <h4>Póliza Básica</h4>
+<section id="productos"> 
+  <div id="bronce">
+    <h4>Póliza Básica</h4>
     <p>Cobertura para viajes cortos dentro del perimetro de tu ciudad <br>
      solo se cubren viajes en movilidad publica.
     </p>
-  <img class="img-basico" src="imagenes/basico.png" alt="Logo-imagen-seguro-básico">
+  </div>
+  
+  
 
+ <div id="silver">
   <h4>Póliza Intermedia</h4>
   <p>Cobertura dentro del territorio nacional <br>
      se cubren viajes por las diferents vias de transporte pubica y privadas.
   </p>
-  <img class="img-intermedio" src="imagenes/intermedio.png" alt="Logo-imagen-seguro-intermedio">
+ 
+ </div>
 
-  <h4>Póliza Premium</h4>
+  <div id="gold">
+    <h4>Póliza Premium</h4>
   <p>Cobertura dentro del territorio nacional y a nivel internaconal <br>
     se cubren viajes por las diferents vias de transporte pubica y privadas, ademas de actividades rereacionales de alto riesgo.
  </p>
-  <img class="img-premium" src="imagenes/premium.png" alt="Logo-imagen-seguro-premium">
+  </div>
 </section>
 
-
-<h1>Formulario de Seguro</h1>
-    <form action="procesar_formulario.php" method="post">
+<section id="contacto">
+  <h1>Formulario de Seguro</h1>
+  <form action="procesar_formulario.php" method="post">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
@@ -68,9 +80,13 @@
         </select>
 
         <input type="submit" value="Enviar">
-    </form>
+  </form>
+</section>
+<footer>
 
 
+
+</footer>
 </body>
 </html>
 
