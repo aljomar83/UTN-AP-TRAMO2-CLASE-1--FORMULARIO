@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   }
 
 header{
@@ -35,7 +36,7 @@ h3{
 
 #bronce{
   display: flex;
-  justify-content:flex-start ;
+  justify-content:center;
   align-items: center;
   text-align: center;
   width: 300px;
@@ -65,15 +66,11 @@ h3{
   background-size: cover;
 }
 
-#contacto{
-  display: flex;
-  justify-content: center;
+#formulario{
+   display: flex;
+  justify-content: space-around;
   flex-direction: column;
+  align-items: center;
+  background-color: brown;
 }
 
-
-nav li a:hover {
-  background: tomato;
-  color: white;
-}
-  
