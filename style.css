@@ -1,94 +1,124 @@
+/* reseteamos los valores por defecto que tienen los elementos */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   }
+/* creamos nuestras variables de color o paleta de colores a utilizar */
+:root{
+  --colorPrimario: rgb(71, 181, 245);
+  --colorsecundario: rgb(165, 165, 240);
 
-header{
+}
+  
+#contenedorHeader{
+ background-image: linear-gradient(to bottom, rgb(6, 228, 236), rgb(253, 251, 251));
   display: flex;
   justify-content: space-around;
-  background-color: beige;
-  align-items: center;
-
+  box-shadow: blue 10px, 10px, 10px;
+}
+#contenedorTexto{
+  justify-content: center;
+  font-size: smaller;
 }
 
+/* aca estamos trabajando con el contenedor del nav */
+#contenedorNav{
+display: flex;}
 a{
   text-decoration: none;
+  color: blue;
+  justify-content: space-between  ;
 }
-
 a:hover{
-  color: red;
+  color: var(--colorsecundario);
 }
 
 body{
-  background-color: rgb(253, 253, 253);
+  background-color:
 }
 
 #hero{
   display: flex;
   height: 80vh;
-  flex-direction: column;
-  align-items: center;
+  flex-direction:row;
+  align-items: top;
   justify-content: center;
+  font-family: 'Indie Flower', cursive;
+  padding-top: 80px;
   background-image:url(imagenes/viaje2.png);
+  background-size: 100vw 100vh;
+}
+
+#contenedorTexto{
+  font-size: 100%;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 h3{
   font-weight: bold;
   font-size: 200%;
   }
+h5{
+  font-size: 200%;
+  margin-bottom: 50px;
+}
 
-
-#productos{
-  background-color: brown;
-  height: 350px;
+#medallas-productos{
+  /* height: 350px; */
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color: white;
+}
+
+#descripcion-medallas{
+  display: flex;
 }
 
 #bronce{
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   justify-content:space-around;
   align-items: center;
   text-align: justify;
   width: 300px;
-  height: 300px;
-  background-image: url(imagenes/bronze.png);
+  height: 200px;
+  background-image: url(imagenes/medallaBronce.png);
   background-size: cover;
 }
 
 #silver{
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   text-align: justify;
   width: 300px;
-  height: 300px;
-  background-image: url(imagenes/silver.png);
+  height: 200px;
+  background-image: url(imagenes/medallaPlata.png);
   background-size: cover;
 }
 
 
 #gold{
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: center; */
   text-align: justify;
   width: 300px;
-  height: 300px;
-  background-image: url(imagenes/gold.png);
+  height: 200px;
+  background-image: url(imagenes/medallaOro.png);
   background-size: cover;
 }
 
 #contacto{
   height: 600px;
-  background-image: url(imagenes/fondo.png);
+  background-image: url(imagenes/negocios.jpg);
+  box-shadow: 5px 8px 12px red;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:100vw 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,11 +126,13 @@ h3{
 
 #frm{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 6px;
-  background-color: gray;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px;
+  box-sizing: border-box;
+  background-color: var(--colorsecundario);
   opacity: 80%;
   height: 400px;
-  width: 320px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -112,11 +144,7 @@ h3{
   text-align: center;
 }
 
-#frm input::placeholder{
-  color: white;
-}
-
 footer{
   height: 20vh;
-  background-color: blueviolet;
+  background-color: var(--colorPrimario)
 }
