@@ -12,6 +12,14 @@ header{
 
 }
 
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+
 body{
   background-color: rgb(253, 253, 253);
 }
@@ -19,26 +27,32 @@ body{
 #hero{
   display: flex;
   height: 80vh;
-  justify-content:first baseline;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image:url(imagenes/viaje2.png);
 }
 
 h3{
-  align-content: center;
-}
+  font-weight: bold;
+  font-size: 200%;
+  }
+
 
 #productos{
+  background-color: brown;
+  height: 350px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 #bronce{
+  flex-direction: column;
   display: flex;
-  justify-content:center;
+  justify-content:space-around;
   align-items: center;
-  text-align: center;
+  text-align: justify;
   width: 300px;
   height: 300px;
   background-image: url(imagenes/bronze.png);
@@ -46,9 +60,11 @@ h3{
 }
 
 #silver{
+  flex-direction: column;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  text-align: justify;
   width: 300px;
   height: 300px;
   background-image: url(imagenes/silver.png);
@@ -57,20 +73,50 @@ h3{
 
 
 #gold{
+  flex-direction: column;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  text-align: justify;
   width: 300px;
   height: 300px;
   background-image: url(imagenes/gold.png);
   background-size: cover;
 }
 
-#formulario{
-   display: flex;
-  justify-content: space-around;
+#contacto{
+  height: 600px;
+  background-image: url(imagenes/fondo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: brown;
 }
 
+#frm{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 6px;
+  background-color: gray;
+  opacity: 80%;
+  height: 400px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#frm input, select{
+  border-radius: 6px;
+  text-align: center;
+}
+
+#frm input::placeholder{
+  color: white;
+}
+
+footer{
+  height: 20vh;
+  background-color: blueviolet;
+}

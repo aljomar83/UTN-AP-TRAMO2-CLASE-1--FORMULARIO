@@ -7,63 +7,55 @@
   <title>Ejercicio nro 1 UTN AP4.0</title>
   <link rel="icon" href="imagenes/ejercicios.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
-
 <body>
-  <header>
-            <h1 class="titulo">SEGURO</h1>
-        <h2 class="nombre">No Pagamos Cooperativa</h2>
-      <nav>
-        <a href="#hero">HOME</a>
-        <a href="#productos">PRODUCTOS</a>
-        <a href="#contacto">CONTACTO</a>
-
-        
-      </nav>
-        
-  </header>
-
+<header>
+  <h1 class="titulo">SEGURO</h1>
+  <h2 class="nombre">No Pagamos Cooperativa</h2>
+  <nav>
+    <a href="#hero"><i class="las la-home"></i> HOME</a>
+    <a href="#productos"><i class="las la-tags"></i> PRODUCTOS</a>
+    <a href="#contacto"><i class="lar la-envelope"></i> CONTACTO</a>
+  </nav>       
+</header>
+<main>
   <section id="hero">
-  <h3>Disfrutá de tu vida, viajá con la familia, mientras nosotros los cuidamos...</h3>
-   </section>
-
-
-<section id="productos"> 
-  <div>
+    <h3>Disfrutá de tu vida, viajá con la familia, mientras nosotros los cuidamos...</h3>
+  </section>
+  <section id="productos"> 
     <div id="bronce">
-      <h4>Póliza Bronce <br> (Básica)</h4>
+      <div id="caja1">
+        <h4>Póliza Bronce <br> (Básica)</h4>
+      </div>
+      <div>
+        <p>Cobertura para viajes cortos dentro del perimetro de tu ciudad solo se cubren viajes en movilidad publica.</p>
+      </div>
     </div>
-    <div>
-      <p>Cobertura para viajes cortos dentro del perimetro de tu ciudad <br>
-      solo se cubren viajes en movilidad publica.</p>
-    </div>
-    
-    
     <div id="silver">
-      <h4>Póliza Plata <br> (Intermedia)</h4>
+      <div id="caja2">
+        <h4>Póliza Plata <br> (Intermedia)</h4>
+      </div>
+      <div>
+        <p>Cobertura dentro del territorio nacional <br> se cubren viajes por las diferents vias de transporte pubica y privadas.</p>
+      </div>
     </div>
-    <div>
-      <p>Cobertura dentro del territorio nacional <br>
-      se cubren viajes por las diferents vias de transporte pubica y privadas.</p>
-    </div>
-      
     <div id="gold">
-      <h4>Póliza Oro <br> (Premium)</h4>
-    </div>
-    <div>
-      <p>Cobertura dentro del territorio nacional y a nivel internaconal <br>
+      <div id="caja3">
+        <h4>Póliza Oro <br> (Premium)</h4>
+      </div>
+      <div>
+        <p>Cobertura dentro del territorio nacional y a nivel internaconal <br>
         se cubren viajes por las diferents vias de transporte pubica y privadas, ademas de actividades rereacionales de alto riesgo.</p>
+      </div>
+    </div>  
+  </section>
+  <section id="contacto">
+    <div>
+      <h3>Formulario de Contacto</h3>
     </div>
-  </div>
-</section>
-
-<section id="contacto">
-
-  <div>
-  <h4>Formulario de Seguro</h4>
-  </div>
-  <div id="formulario"> 
-      <form action="procesar_formulario.php" method="post">
+    <div id="formulario"> 
+      <form action="#" id="frm">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
 
@@ -81,23 +73,22 @@
 
             <label for="tipo_seguro">Tipo de Seguro:</label>
             <select id="tipo_seguro" name="tipo_seguro" required>
-                <option value="seguro_basico">Seguro Básico 500</option>
-                <option value="seguro_intermedio">Seguro Intermedio 1000</option>
-                <option value="seguro_premium">Seguro Premium 1500</option>
+                <option value="AR$ 500">Seguro Básico Bronce</option>
+                <option value="AR$ 1.000">Seguro Intermedio Plata</option>
+                <option value="AR$ 1.500">Seguro Premium Oro</option>
             </select>
-
+              <label id="mostrar"></label>
             <input type="submit" value="Enviar">
       </form>
-  </div>
-
-
-</section>
-
+    </div>
+  </section>
+</main>  
 <footer>
-
-
-
+  <i class="las la-copyright"></i>  
+  <i class="lab la-facebook"></i>
+  <i class="lab la-css3-alt"></i>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>
 
