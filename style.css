@@ -4,13 +4,14 @@
   padding: 0;
   box-sizing: border-box;
   }
+
 /* creamos nuestras variables de color o paleta de colores a utilizar */
 :root{
   --colorPrimario: rgb(71, 181, 245);
   --colorsecundario: rgb(165, 165, 240);
-
 }
-  
+
+/* aca se trebajaon el header. */
 #contenedorHeader{
  background: linear-gradient(to bottom, rgb(6, 228, 236), rgb(253, 251, 251));
   display: flex;
@@ -39,8 +40,7 @@ a{
 a:hover{
   color: var(--colorsecundario);
 }
-
-
+/* en esta seccio tenemo el hero */
 #hero{
   display: flex;
   height: 100vh;
@@ -62,60 +62,49 @@ h3{
   text-decoration: border black;
   }
 
+h4{
+flex-direction: wrap;
+  }
+
 h5{
-  font-size: 200%;
+  font-size: 400%;
   margin-bottom: 50px;
+}
+h6{
+ font-size: 300%;
+ padding-top: 40px;
 }
 
 #medallas-productos{
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background: linear-gradient(to top, rgb(6, 228, 236), rgb(253, 251, 251));
-
-}
-
-#descripcion-medallas{
-  display: flex;
-  background: linear-gradient(to bottom, rgb(6, 228, 236), rgb(253, 251, 251));
-
-}
-
-#bronce{
-  flex-direction: row;
-  display: flex;
-  justify-content:space-around;
+  flex-direction: column;
   align-items: center;
-  text-align: justify;
-  width: 300px;
-  height: 200px;
-  background-image: url(imagenes/medallaBronce.png);
-  background-size: cover;
-}
-
-#silver{
-  flex-direction: row;
-  display: flex;
-  justify-content: space-around;
-  text-align: justify;
-  width: 300px;
-  height: 200px;
-  background-image: url(imagenes/medallaPlata.png);
-  background-size: cover;
+  gap: 40px;
+  padding: 50px 0px;
+  background-image: radial-gradient( rgb(2, 228, 200), white);
 }
 
 
-#gold{
-  flex-direction: row;
+
+.contenedorMedallas{
   display: flex;
+  background-color: var(--colorsecundario)
+  width: 800px;
+  padding: 20px;
+  border:5px solid blue;
+  border-radius: 20px;
+  shadow::backdrop
+}
+
+.contenedorMedallas:hover{background-color: var(--colorsecundario);}
+
+.medalla{
+  width: 400px;
+}
+.pie{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; 
-  text-align: justify;
-  width: 300px;
-  height: 200px;
-  background-image: url(imagenes/medallaOro.png);
-  background-size: cover;
 }
 
 p{
