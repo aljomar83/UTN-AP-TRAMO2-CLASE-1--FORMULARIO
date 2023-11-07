@@ -12,7 +12,7 @@
 }
   
 #contenedorHeader{
- background-image: linear-gradient(to bottom, rgb(6, 228, 236), rgb(253, 251, 251));
+ background: linear-gradient(to bottom, rgb(6, 228, 236), rgb(253, 251, 251));
   display: flex;
   justify-content: space-around;
   box-shadow: blue 10px, 10px, 10px;
@@ -24,23 +24,25 @@
 
 /* aca estamos trabajando con el contenedor del nav */
 #contenedorNav{
-display: flex;}
+  padding-top: 20px;
+display: flex;
+font-size:larger;
+}
+
 a{
   text-decoration: none;
   color: blue;
   justify-content: space-between  ;
 }
+
 a:hover{
   color: var(--colorsecundario);
 }
 
-body{
-  background-color:
-}
 
 #hero{
   display: flex;
-  height: 80vh;
+  height: 100vh;
   flex-direction:row;
   align-items: top;
   justify-content: center;
@@ -57,24 +59,29 @@ body{
 
 h3{
   font-weight: bold;
-  font-size: 200%;
+  font-size: 250%;
+  color: rgba(0, 0, 255, 0.548);
+  text-decoration: border black;
   }
+
 h5{
   font-size: 200%;
   margin-bottom: 50px;
 }
 
 #medallas-productos{
-  /* height: 350px; */
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: white;
+  background: linear-gradient(to top, rgb(6, 228, 236), rgb(253, 251, 251));
+
 }
 
 #descripcion-medallas{
   display: flex;
+  background: linear-gradient(to bottom, rgb(6, 228, 236), rgb(253, 251, 251));
+
 }
 
 #bronce{
@@ -113,10 +120,12 @@ h5{
   background-size: cover;
 }
 
+p{
+  border-style: blue;
+}
 #contacto{
   height: 600px;
-  background-image: url(imagenes/negocios.jpg);
-  box-shadow: 5px 8px 12px red;
+  background-image: url(imagenes/negocios.png);
   background-repeat: no-repeat;
   background-size:100vw 100vh;
   display: flex;
@@ -130,7 +139,7 @@ h5{
   box-shadow: 10px 10px 10px;
   box-sizing: border-box;
   background-color: var(--colorsecundario);
-  opacity: 80%;
+  opacity: 60%;
   height: 400px;
   width: 300px;
   display: flex;
@@ -146,5 +155,6 @@ h5{
 
 footer{
   height: 20vh;
-  background-color: var(--colorPrimario)
-}
+  background: linear-gradient(to top, rgb(6, 228, 236), rgb(253, 251, 251));
+  font-size: 40px;
+  }
