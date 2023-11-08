@@ -78,9 +78,20 @@ h5{
   display: flex;
   width: 800px;
   padding: 20px;
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   border-radius: 20px;
-  box-shadow: 10px 10px 10px;
+  box-shadow: 5px 8px 12px blue;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  }
+  
+  .contenedor:hover{
+    transform: scale(1.1);
+    box-shadow: 13px 15px 37px black;
+  }
+
+
+
 }
 
 .img{
