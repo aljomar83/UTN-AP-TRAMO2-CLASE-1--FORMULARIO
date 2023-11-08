@@ -69,7 +69,8 @@ h5{
 
 .medallas-productos{
   background-image: url(imagenes/fondoAzulTecno.png);
-  background-size: cover;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
   gap: 50px;
   align-items: center;
 }
