@@ -67,13 +67,16 @@ h5{
   margin-bottom: 50px;
 }
 
-#medallas-productos{
+.medallas-productos{
+  background-color: red;
+}
+/* .medallas-productos{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   background: linear-gradient(to top, rgb(6, 228, 236), rgb(253, 251, 251));
-
+ */
 }
 
 #descripcion-medallas{
@@ -82,41 +85,7 @@ h5{
 
 }
 
-#bronce{
-  flex-direction: row;
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-  text-align: justify;
-  width: 300px;
-  height: 200px;
-  background-image: url(imagenes/medallaBronce.png);
-  background-size: cover;
-}
 
-#silver{
-  flex-direction: row;
-  display: flex;
-  justify-content: space-around;
-  text-align: justify;
-  width: 300px;
-  height: 200px;
-  background-image: url(imagenes/medallaPlata.png);
-  background-size: cover;
-}
-
-
-#gold{
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  text-align: justify;
-  width: 300px;
-  height: 200px;
-  background-image: url(imagenes/medallaOro.png);
-  background-size: cover;
-}
 
 p{
   border-style: blue;
