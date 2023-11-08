@@ -68,10 +68,18 @@ h5{
 }
 
 .medallas-productos{
-  background-color: red;
+  background-image: url(imagenes/fondoAzulTecno.png);
+  background-size: cover;
 }
-/* .medallas-productos{
+.medallas-texto{
+  flex-direction: column;
+  width: 500px;
+}
+
+
+  /* .medallas-productos{
   display: flex;
+
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
