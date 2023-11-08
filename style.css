@@ -61,22 +61,28 @@ h3{
   color: rgba(0, 0, 255, 0.548);
   text-decoration: border black;
   }
-
+h4{
+  font-size: 150%;
+}
 h5{
+  padding-top: 50px;
   font-size: 200%;
   margin-bottom: 50px;
 }
 
 .medallas-productos{
-  background-image: url(imagenes/fondoAzulTecno.png);
+  background-image: url(imagenes/fondoFranjaAzul.png);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   gap: 50px;
   align-items: center;
+  justify-content: space-around;
 }
 .contenedor{
   display: flex;
-  width: 1000px;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 5px 8px 12px blue;
@@ -96,7 +102,8 @@ h5{
 }
 
 .img{
-  width: 400px;
+  width: 300px;
+  justify-content: space-around;
 }
 
 
@@ -115,6 +122,7 @@ p{
 
 #frm{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 30px;  
   border-radius: 15px;
   box-shadow: 10px 10px 10px;
   box-sizing: border-box;
