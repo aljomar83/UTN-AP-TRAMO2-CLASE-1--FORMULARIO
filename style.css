@@ -76,9 +76,8 @@ h5{
 }
 .contenedor{
   display: flex;
-  width: 800px;
+  width: 1000px;
   padding: 20px;
-  /* border: 5px solid blue; */
   border-radius: 20px;
   box-shadow: 5px 8px 12px blue;
   cursor: pointer;
@@ -90,19 +89,15 @@ h5{
     box-shadow: 13px 15px 37px black;
   }
 
-
-
+.texto{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img{
   width: 400px;
 }
-.texto{
-  display:flex;
-  flex-direction: column;
-  background-color: brown;
-}
-
 
 
 p{
