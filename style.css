@@ -68,13 +68,29 @@ h5{
 }
 
 .medallas-productos{
-  background-image: url(imagenes/fondoAzulTecno.png);
+  /* background-image: url(imagenes/fondoAzulTecno.png); */
   background-size: cover;
+  gap: 20px;
+  align-items: center;
 }
-.medallas-texto{
+.contenedor{
+  display: flex;
+  width: 800px;
+  padding: 20px;
+  border: 5px solid blue;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px;
+}
+
+.img{
+  width: 400px;
+}
+.texto{
+  display:flex;
   flex-direction: column;
-  width: 500px;
+  background-color: brown;
 }
+
 
 
   /* .medallas-productos{
@@ -86,13 +102,6 @@ h5{
   background: linear-gradient(to top, rgb(6, 228, 236), rgb(253, 251, 251));
  */
 }
-
-#descripcion-medallas{
-  display: flex;
-  background: linear-gradient(to bottom, rgb(6, 228, 236), rgb(253, 251, 251));
-
-}
-
 
 
 p{
