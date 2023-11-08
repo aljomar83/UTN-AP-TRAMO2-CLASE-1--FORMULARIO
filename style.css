@@ -71,6 +71,8 @@ h5{
 }
 
 .medallas-productos{
+  display: flex;
+  flex-direction: column;
   background-image: url(imagenes/fondoFranjaAzul.png);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
