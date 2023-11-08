@@ -68,9 +68,9 @@ h5{
 }
 
 .medallas-productos{
-  /* background-image: url(imagenes/fondoAzulTecno.png); */
+  background-image: url(imagenes/fondoAzulTecno.png);
   background-size: cover;
-  gap: 20px;
+  gap: 50px;
   align-items: center;
 }
 .contenedor{
@@ -91,17 +91,6 @@ h5{
   background-color: brown;
 }
 
-
-
-  /* .medallas-productos{
-  display: flex;
-
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background: linear-gradient(to top, rgb(6, 228, 236), rgb(253, 251, 251));
- */
-}
 
 
 p{
